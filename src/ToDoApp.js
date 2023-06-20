@@ -52,7 +52,7 @@ const ToDoApp = () => {
         </div>
 
         <div className='w-full fixed top-1/3cl sm:top-1/3 md:w-1/3 bg-gray-500 '>
-          <ul className='flex flex-col  text-white text-xl tracking-wider p-4 rounded-md '>
+          <ul className='flex flex-col  text-white text-xl tracking-wider p-4 rounded-md overflow-auto'>
             {todos.map((todo, id) => {
               const { text, checked } = todo;
               return (
